@@ -1,0 +1,382 @@
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.top-bar {
+    background-color: #2a0f8b;
+    padding: 5px 430px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info span {
+    margin-right: 40px;
+    color: #fff;
+}
+
+.main-header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px; /* Adicionando espaçamento interno */
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1640D6;
+}
+
+nav a i {
+    margin-right: 5px;
+}
+
+/* Adicionando estilo específico para as opções de ensino */
+nav ul ul {
+    padding: 0px 0;
+    border-radius: 1px;
+}
+
+nav ul ul li {
+    margin-right: 0;
+    margin-bottom: 0px; /* Adicionando margem inferior para espaçamento entre as opções de ensino */
+}
+
+nav ul ul a {
+    padding: 8px 15px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    display: block; /* Faz com que o link ocupe toda a largura disponível */
+}
+
+nav ul ul a:hover {
+    color: #1c2ed8;
+    background-color: #f2f2f2;
+}
+
+
+.carousel-container {
+    width: 50,5vw; /* 100% da largura da viewport (tela) */
+    height: 50,5vh; /* 100% da altura da viewport (tela) */
+    overflow: hidden;
+    position: active; /* Adicionando posição relativa para alinhar controles no carrossel */
+    margin-bottom: 20px; /* Adicionando margem inferior para afastar do footer */
+}
+
+.carousel-slide {
+    display: none;
+}
+
+img {
+    width: 100%; /* 100% da largura do contêiner */
+    height: 100%; /* 100% da altura do contêiner */
+    object-fit: cover; /* Garantindo que a imagem cubra a área especificada */
+}
+
+.carousel-control {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.137); /* Adicionando fundo transparente aos controles */
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control.prev {
+    left: 0;
+}
+
+.carousel-control.next {
+    right: 0;
+}
+
+.container-py-5{
+margin: 500px;
+font-family: 'Arial', sans-serif;
+
+}
+
+.my-3 {
+    margin:200px;
+    font-size:15px;
+  
+}
+
+
+
+
+footer {
+    width: 100%;
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 20px; /* Ajuste conforme necessário */
+    box-sizing: border-box; /* Garante que o preenchimento seja incluído nas dimensões totais */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px; /* Defina uma largura máxima para o conteúdo do rodapé */
+    margin: 0 auto; /* Centralize o conteúdo horizontalmente */
+    width: 100%; /* Adicione isso para ocupar a largura total na tela se o conteúdo for menor que 1200px */
+    padding: 20px; /* Adicione padding conforme necessário para o espaçamento do conteúdo do rodapé */
+    box-sizing: border-box; /* Garante que o preenchimento seja incluído nas dimensões totais */
+}
+
+
+.footer-section {
+    text-align: left;
+    flex: 1;
+}
+
+.footer-section h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px; /* Adicionado para espaçamento abaixo do título */
+}
+
+.footer-section p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section i {
+    margin-right: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    color: #f2f2f2;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+
+
+
+.container-squares {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.square {
+    width: 300px;
+    height: 200px;
+    background-color: #ebebeb;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.square:hover {
+    transform: scale(1.05);
+}
+
+.square i {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.square p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.square button {
+    padding: 10px;
+    background-color: #818181;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.square button:hover {
+    background-color: #2b2b2b;
+}
+
+
+
+
+
+.news-events-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.section-title {
+    color: #2a0f8b;
+}
+
+.section-subtitle {
+    color: #3c3c3c;
+    margin-top: 10px;
+}
+
+.section-text {
+    color: #666;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+    max-width: 1700px; /* Defina a largura máxima para evitar que os cards se espalhem demais */
+    margin: 0 auto; /* Centralize a área dos cards na página */
+}
+  
+  .card {
+    width: 300px; /* Defina uma largura fixa para os cards */
+    border-radius: 0.5rem;
+    background-color: #fcd5d5;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    margin-bottom: 20px;
+  }
+  
+  
+  .card a {
+    text-decoration: none;
+  }
+  
+  .content {
+    padding: 1.1rem;
+  }
+  
+  .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px; /* Altura fixa desejada */
+    max-width: 100%; /* Garante que a largura não ultrapasse o contêiner */
+}
+
+
+  
+  .title {
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .desc {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563EB;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .action span {
+    transition: .3s ease;
+  }
+  
+  .action:hover span {
+    transform: translateX(4px);
+  }
+  
