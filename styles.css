@@ -1,0 +1,726 @@
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.top-bar {
+    background-color: #2a0f8b;
+    padding: 5px 20px; /* Ajustado para telas menores */
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+    justify-content: center; /* Alinha os itens no centro */
+}
+
+.contact-info span {
+    margin-right: 20px;
+    color: #fff;
+}
+
+.main-header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    flex-wrap: wrap; /* Permite o ajuste do conteúdo em telas menores */
+}
+
+.logo img {
+    height: 120px; /* Ajustado para ser mais flexível */
+    width: auto;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Ajuste para telas pequenas */
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1640D6;
+}
+
+nav a i {
+    margin-right: 5px;
+}
+
+/* Adicionando estilo específico para as opções de ensino */
+nav ul ul {
+    padding: 0px 0;
+    border-radius: 1px;
+}
+
+nav ul ul li {
+    margin-right: 0;
+    margin-bottom: 0px; /* Adicionando margem inferior para espaçamento entre as opções de ensino */
+}
+
+nav ul ul a {
+    padding: 8px 15px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    display: block; /* Faz com que o link ocupe toda a largura disponível */
+}
+
+nav ul ul a:hover {
+    color: #1c2ed8;
+    background-color: #f2f2f2;
+}
+
+.carousel-container {
+    width: 50,vw; /* Ajustado para se adaptar ao tamanho da tela */
+    height: 50,5vh;
+    overflow: hidden;
+    position: relative; /* Ajustado para alinhar os controles */
+    margin-bottom: 20px;
+}
+
+.carousel-slide {
+    display: none;
+}
+
+img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control.prev {
+    left: 0;
+}
+
+.carousel-control.next {
+    right: 0;
+}
+
+.container-py-5 {
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.my-3 {
+    margin: 20px;
+    font-size: 15px;
+}
+
+footer {
+    width: 100%;
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer-section {
+    text-align: left;
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section i {
+    margin-right: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    color: #f2f2f2;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.container-squares {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Media Queries para telas pequenas */
+@media (max-width: 768px) {
+    .top-bar {
+        padding: 5px 10px;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-container {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .carousel-control {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+        flex: none;
+    }
+}
+
+/* Media Queries para telas muito pequenas */
+@media (max-width: 480px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info span {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .carousel-container {
+        height: 30vh;
+    }
+
+    .carousel-control {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+}
+
+/*botoes enova*/
+/* Estilo geral da seção */
+.enova {
+    display: flex; /* Ativa o layout flexível */
+    flex-wrap: wrap; /* Permite que os botões quebrem linha em telas menores */
+    justify-content: center; /* Centraliza os botões na linha */
+    gap: 15px; /* Espaçamento entre os botões */
+    padding: 20px;
+    background-color: #f8f9fa; /* Cor de fundo da seção */
+  }
+  
+  /* Estilo de cada botão */
+  .enova-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #720606de; /* Cor de fundo padrão do botão */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    width: 200px; /* Largura fixa dos botões */
+    height: 160px; /* Altura fixa dos botões */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza as mudanças */
+  }
+  
+  /* Imagem dentro do botão */
+  .enova-item img {
+    width: 100px; /* Ajusta o tamanho da imagem */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+  }
+  
+  /* Efeito hover para o botão */
+  .enova-item:hover {
+    background-color: #020c18; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento de tamanho */
+    color: #ffc107; /* Altera a cor do texto ao passar o mouse */
+  }
+  
+  /* Texto principal (span) dentro do botão */
+  .enova-item span {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Texto pequeno (small) dentro do botão */
+  .enova-item small {
+    font-size: 14px;
+    color: #ffeb3b; /* Altera a cor do texto secundário */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 576px) {
+    .enova-item {
+      width: 100%; /* Botões ocupam toda a largura em telas menores */
+    }
+  }
+
+/* Estilo geral para o container */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+  }
+/*fim botaõ*/
+
+
+/* Adicione este código ao seu arquivo CSS */
+
+.container-squares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.square {
+    width: 300px;
+    height: 200px;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.square:hover {
+    transform: scale(1.05);
+}
+
+.square i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #6c757d; /* Adicionei cor ao ícone */
+}
+
+.square p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.square button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.square button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+.news-events-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.section-title {
+    color: #2a0f8b;
+}
+
+.section-subtitle {
+    color: #3c3c3c;
+    margin-top: 10px;
+}
+
+.section-text {
+    color: #666;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+  
+  .title {
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .desc {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563EB;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .action span {
+    transition: .3s ease;
+  }
+  
+  .action:hover span {
+    transform: translateX(4px);
+  }
+  
+
+/* Estilo para a seção dos diretores */
+.directors-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Estilo para cada diretor individual */
+.director {
+    text-align: center;
+}
+
+.director img {
+    border-radius: 50%;
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #fff; /* Borda branca ao redor da imagem */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.director p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2a0f8b;
+}
+
+/* Estilo para o título da seção */
+.directors-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/*logo*/
+
+  
+  /* Estilo para o container da imagem */
+  .cetepnews-container {
+    text-align: center;
+  }
+  
+  /* Estilo para a imagem */
+  .cetepnews-container img {
+    max-width:35%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .cetepnews-container img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+  }
+  /*DIREÇÃ9*/
+ /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do corpo */
+ 
+  
+  /* Título centralizado */
+  .text-center {
+    text-align: center;
+    color: #c70a0b;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Seção dos diretores */
+  .directors-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Cada diretor */
+  .director {
+    position: relative;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .director img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;        /* Ajusta a imagem sem distorcer */
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .director .name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .director .role {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  /* Janela de informações */
+  .director:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .director::after {
+    content: attr(data-info);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 8px;
+    text-align: center;
+    white-space: pre-wrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .director:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 10px);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .directors-section {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .director {
+      width: 100%;
+    }
+}
+
+.avisos {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+  .avisos h2 {
+    text-align: center;
+    color: #c70a0b;
+    font-weight: bold;
+  }
+  
+  .aviso {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+  }
+  
+  .aviso:last-child {
+    border-bottom: none;
+  }
+  
+  .aviso-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .aviso-icone {
+    font-size: 24px;
+    color: #f39c12; /* Cor amarela para o ícone do sino */
+    margin-right: 10px;
+  }
+  
+  .aviso-titulo {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .aviso-conteudo {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .avisos {
+      padding: 15px;
+    }
+  
+    .aviso-item {
+      padding-left: 10px;
+    }
+  
+    .aviso-titulo {
+      font-size: 16px;
+    }
+  
+    .aviso-conteudo {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aviso {
+      padding: 10px 0;
+    }
+  
+    .aviso-titulo {
+      font-size: 14px;
+    }
+  
+    .aviso-conteudo {
+      font-size: 10px;
+    }
+  }
+  
+  
