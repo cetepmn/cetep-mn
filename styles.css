@@ -1,4 +1,6 @@
-
+.test{
+  cursor: pointer;
+}
 
 body {
     margin: 0;
