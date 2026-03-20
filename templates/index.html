@@ -95,21 +95,7 @@
         <P> <small class="text-warning">Atualização Cadastral</small></P>
       </div>
     </a>
-    <a href="/Itupeva" target="_blank"
-      class="col-sm-6 col-md-3 d-flex justify-content-center align-items-center enova-item">
-      <img width="80" src="https://cdn-icons-png.flaticon.com/512/203/203923.png" alt="" class="p-1">
-      <div class="d-flex flex-column align-items-stretch">
-        <span class="fw-bold">ANEXO - ITUPEVA</span>
-        <P> <small class="text-warning">Saiba mais...</small></P>
-      </div>
-    </a>
-    <a href="/Nova Lidicie" target="_blank"
-      class="col-sm-6 col-md-3 d-flex justify-content-center align-items-center enova-item">
-      <img width="80" src="https://cdn-icons-png.flaticon.com/512/203/203923.png" alt="" class="p-1">
-      <div class="d-flex flex-column align-items-stretch">
-        <span class="fw-bold">ANEXO - NOVA LÍDICE</span>
-        <P> <small class="text-warning">Saiba mais...</small></P>
-      </div>
+    
     </a>
   </div>
 </section>
@@ -120,27 +106,27 @@
   <h2 class="text-center">Conheça a Direção e Coordenação</h2>
   <div class="directors-section">
     <div class="director" data-info="Sérgio Alves é o Diretor responsável, lidera a gestão escolar e toma decisões administrativas importantes.">
-      <img src="Folder/Equipe/Sergio.jpg" alt="Diretor Sérgio">
+      <img src="{{ url_for('static', filename= 'Sergio.jpg') }}" alt="Diretor Sérgio">
       <p class="name">Sérgio Alves</p>
       <p class="role">Diretor</p>
     </div>
     <div class="director" data-info="Andréia Prates é a Vice-Diretora, auxilia o diretor nas tarefas administrativas e de gestão, assumindo a liderança na ausência do diretor.">
-      <img src="Folder/Equipe/Andreia.jpg" alt="Vice Andréia">
+      <img src="{{ url_for('static', filename= 'Andreia.jpg') }}" alt="Vice Andréia">
       <p class="name">Andréia Prates</p>
       <p class="role">Vice - Diretora</p>
     </div>
     <div class="director" data-info="Filipe Gustavo é Vice-Diretor, auxilia o diretor nas tarefas administrativas e de gestão, assumindo a liderança na ausência do diretor.">
-      <img src="Folder/Equipe/Filipe Gustavo.jpg" alt="Vice Filipe">
+       <img src="{{ url_for('static', filename= 'Filipe Gustavo.jpg') }}" alt="Vice Filipe">
       <p class="name">Filipe Gustavo</p>
       <p class="role">Vice - Diretor</p>
     </div>
     <div class="director" data-info="Eliezer é o Coordenador Escolar, supervisiona o desenvolvimento curricular, estratégias pedagógicas e apoia os professores.">
-      <img src="Folder/Equipe/Eliezer.jpeg" alt="Coordenador Eliezer">
+       <img src="{{ url_for('static', filename= 'Eliezer.jpeg') }}" alt="Coordenador Eliezer">
       <p class="name">Eliezer</p>
       <p class="role">Coordenador Escolar</p>
     </div>
     <div class="director" data-info="Valmiro é o Auxiliar da Coordenação, apoia as atividades e rotinas da coordenação pedagógica, ajudando na organização e execução de planos.">
-      <img src="Folder/Equipe/Valmiro.jpg" alt="Auxiliar Valmiro">
+       <img src="{{ url_for('static', filename= 'Valmiro.jpg') }}" alt="Auxiliar Valmiro">
       <p class="name">Valmiro</p>
       <p class="role">Auxiliar da Coordenação</p>
     </div>
@@ -158,7 +144,7 @@
 
 <div class="cetepnews-container">
   <a href="https://cetepmn.github.io/cetepnews/" target="_blank">
-    <img src="cetepnews.png" alt="Imagem Centralizada">
+     <img src="{{ url_for('static', filename= 'cetepnews.png') }}" alt="Imagem Centralizada">
   </a>
 </div>
 
