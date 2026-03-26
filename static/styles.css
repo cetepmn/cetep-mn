@@ -540,11 +540,12 @@ a{
     max-width:35%;
     height: auto;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transform: scale(0.8)
+    ;
   }
   
   .cetepnews-container img:hover {
-    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+    transform: scale(1); /* Aumenta a imagem ao passar o mouse */
   }
   /*DIREÇÃ9*/
  /* Reset básico */
