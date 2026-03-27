@@ -532,30 +532,61 @@ a{
   
   /* Estilo para o container da imagem */
   .cetepnews-container {
+    position: relative;
     text-align: center;
-  }
-  
-  /* Estilo para a imagem */
-  .cetepnews-container img {
-    max-width:35%;
+}
+
+/* IMAGEM PRINCIPAL */
+.cetepnews-container a img {
+    max-width: 35%;
     height: auto;
     cursor: pointer;
-    transform: scale(0.8)
-    ;
-  }
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+/* Hover SÓ na imagem principal */
+.cetepnews-container a img:hover {
+    transform: scale(1);
+}
+
+/* LOGO DO ESTADO */
+.gov-ba {
+    top: 100px;
+    right: 10px;
+    width: 180px;   /* diminui a logo */
+    height: auto;
+    cursor: default;
+    transform: none !important;
+}
   
-  .cetepnews-container img:hover {
-    transform: scale(1); /* Aumenta a imagem ao passar o mouse */
-  }
-  /*DIREÇÃ9*/
- /* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Estilo do corpo */
+  /* Zap LOGO */
+
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366; /* verde padrão WhatsApp */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.whatsapp-btn img {
+    width: 60%;
+    height: auto;
+}
+
+/* Hover suave */
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
  
   
   /* Título centralizado */
@@ -728,4 +759,32 @@ a{
     }
   }
   
+  @media (max-width: 768px) {
+    .cetepnews-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .cetep-img {
+        max-width: 80%;
+        transform: scale(1);
+    }
+
+    .gov-ba {
+        position: static;
+        transform: none;
+        width: 70px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
   

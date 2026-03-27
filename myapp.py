@@ -3,7 +3,7 @@ from flask import Flask
 
 
 app = Flask(__name__)
-
+ 
 from viwer import *
 
 if __name__ == "__main__":
@@ -18,7 +18,6 @@ if __name__ == "__main__":
 #git add .
 #git commit -m "Descrição da alteração"
 #git push
-
 
 
         
