@@ -5,9 +5,9 @@ from flask import render_template
 def homepage(): 
     return render_template("index.html")
 
-@app.route("/Integral")
-def Integral():
-    return render_template("regular.html")
+@app.route("/Eja")
+def Eja():
+    return render_template("eja.html")
 
 @app.route("/Informatica")
 def Informatica():
@@ -20,6 +20,10 @@ def Administração():
 @app.route("/Agropecuaria")
 def Agropecuaria():
     return render_template("agropecuaria.html")
+
+@app.route("/Integral")
+def Integral():
+    return render_template("integral.html")
 
 @app.route("/Avisos")
 def Avisos():
