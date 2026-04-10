@@ -20,4 +20,4 @@ if __name__ == "__main__":
 #git push
 
 
-        
+#source .venv/bin/activate
